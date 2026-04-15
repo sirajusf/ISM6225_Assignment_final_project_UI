@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform | Update Operation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./crud-pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html"><span class="brand-dot"></span>Tenant Intel</a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./visualizations.html">Visualizations</a>
+            <a href="./about.html">About Us</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container crud-page">
+        <span class="badge badge-update">Update</span>
+        <h1>Update Existing Intelligence Records</h1>
+        <p class="subtitle">
+          This page simulates modifying an existing report after new tenant evidence is submitted.
+        </p>
+
+        <section>
+          <h2>Example Update Flow</h2>
+          <div class="card">
+            <p><strong>Record:</strong> TIP-2026-0412</p>
+            <p><strong>Current Status:</strong> Medium fraud risk, 58 lease risk score</p>
+            <p><strong>New Input:</strong> Additional review confirms repeated undisclosed move-out fees</p>
+            <p><strong>Updated Status:</strong> High fraud risk, 64 lease risk score</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Update Rules (Simulation)</h2>
+          <div class="card">
+            <ul>
+              <li>Only verified users and moderators can edit critical fields</li>
+              <li>Every change stores a timestamp and edit history</li>
+              <li>Updated records re-score risk analytics in the dashboard</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="actions">
+          <a href="./visualizations.html">Back to Visualizations</a>
+          <a href="./crud-delete.html">Go to Delete Demo</a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

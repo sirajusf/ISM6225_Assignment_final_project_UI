@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform | Delete Operation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./crud-pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html"><span class="brand-dot"></span>Tenant Intel</a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./visualizations.html">Visualizations</a>
+            <a href="./about.html">About Us</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container crud-page">
+        <span class="badge badge-delete">Delete</span>
+        <h1>Delete or Archive Records</h1>
+        <p class="subtitle">
+          This page explains how incorrect, duplicate, or policy-violating records could be removed.
+        </p>
+
+        <section>
+          <h2>How Delete Would Work</h2>
+          <div class="card">
+            <p>
+              Moderators can either hard-delete spam/invalid submissions or archive records that should not be visible
+              publicly but must remain in system history.
+            </p>
+            <ul>
+              <li>Soft delete: hides record from dashboard but keeps audit trail</li>
+              <li>Hard delete: removes test or malicious records permanently after review</li>
+              <li>Confirmation step: requires reason code and secondary approval</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Example Remove Action</h2>
+          <div class="card">
+            <p><strong>Record:</strong> TIP-2026-0388</p>
+            <p><strong>Reason:</strong> Duplicate of TIP-2026-0387 with copied evidence links</p>
+            <p><strong>Action:</strong> Archived and merged with original report</p>
+          </div>
+        </section>
+
+        <div class="actions">
+          <a href="./visualizations.html">Back to Visualizations</a>
+          <a href="./crud-create.html">Go to Create Demo</a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

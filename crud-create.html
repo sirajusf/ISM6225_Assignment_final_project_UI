@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform | Create Operation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./crud-pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html"><span class="brand-dot"></span>Tenant Intel</a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./visualizations.html">Visualizations</a>
+            <a href="./about.html">About Us</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container crud-page">
+        <span class="badge badge-create">Create</span>
+        <h1>Create a New Tenant Intelligence Record</h1>
+        <p class="subtitle">
+          This page explains how renters would submit a new report, review, or lease-risk signal.
+        </p>
+
+        <section>
+          <h2>How Create Would Work</h2>
+          <div class="card">
+            <p>
+              Users fill a structured form with property details, issue category, incident date, and supporting
+              notes. Optional evidence links can be added for validation.
+            </p>
+            <ul>
+              <li>Input fields: building name, address, landlord/management, category, severity</li>
+              <li>Validation: required fields, duplicate-check against existing reports</li>
+              <li>Submission: stores a new report and triggers moderation review</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Example New Entry</h2>
+          <div class="card">
+            <p><strong>Property:</strong> Harbor Point Residences, Orlando</p>
+            <p><strong>Category:</strong> Hidden Fee Alert</p>
+            <p><strong>Summary:</strong> Parking and move-in admin fees not disclosed in listing.</p>
+          </div>
+        </section>
+
+        <div class="actions">
+          <a href="./visualizations.html">Back to Visualizations</a>
+          <a href="./crud-read.html">Go to Read Demo</a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

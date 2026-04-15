@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform | Data Visualizations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./visualizations.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html">
+          <span class="brand-dot"></span>
+          Tenant Intel
+        </a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./index.html#features">Features</a>
+            <a class="active" href="./visualizations.html">Visualizations</a>
+            <a href="./index.html#ai-assistants">Renter Fit Assistant</a>
+            <a href="./index.html#testimonials">Contact</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="viz-hero">
+        <div class="container">
+          <p class="eyebrow">Data Intelligence Dashboard</p>
+          <h1>Interactive Rental Risk and Tenant Insights</h1>
+          <p class="viz-lead">
+            Explore realistic demo metrics across market risk, tenant experience, and AI assistant impact.
+            Use the filters to change the view and compare trends.
+          </p>
+        </div>
+      </section>
+
+      <section class="container controls-panel reveal">
+        <h2>Dashboard Filters</h2>
+        <div class="control-grid">
+          <div class="control-group" role="group" aria-label="Time range">
+            <p>Time Range</p>
+            <div class="segmented" id="timeframe-controls">
+              <button class="segmented-btn active" type="button" data-range="6m">Last 6 Months</button>
+              <button class="segmented-btn" type="button" data-range="12m">Last 12 Months</button>
+            </div>
+          </div>
+          <label class="control-group" for="city-filter">
+            <span>Tenant Experience City Scope</span>
+            <select id="city-filter">
+              <option value="all">All Cities</option>
+              <option value="fl-core">Florida Core (Tampa, Orlando, Miami)</option>
+              <option value="south">South Focus (Miami, Orlando, Austin)</option>
+            </select>
+          </label>
+          <div class="control-group" role="group" aria-label="AI chart mode">
+            <p>AI Assistant View</p>
+            <div class="segmented" id="ai-mode-controls">
+              <button class="segmented-btn active" type="button" data-ai-mode="usage">Usage Share</button>
+              <button class="segmented-btn" type="button" data-ai-mode="impact">Outcome Impact</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container chart-grid">
+        <article class="chart-card reveal">
+          <div class="chart-header">
+            <h2>Rental Risk Trend</h2>
+            <p>Scam report rate and average lease risk score over time.</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="riskTrendChart" aria-label="Rental risk trend chart" role="img">
+              Rental risk trend data visualization.
+            </canvas>
+          </div>
+          <p class="chart-note">
+            Dummy data combines reported scam incidents per 1,000 listings and AI lease-risk scoring.
+          </p>
+        </article>
+
+        <article class="chart-card reveal">
+          <div class="chart-header">
+            <h2>Tenant Experience Breakdown</h2>
+            <p>City-level issue patterns from anonymized renter feedback.</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="experienceChart" aria-label="Tenant experience stacked bar chart" role="img">
+              Tenant experience breakdown chart.
+            </canvas>
+          </div>
+          <p class="chart-note">
+            Categories show issue volume for maintenance delays, hidden fees, and communication quality.
+          </p>
+        </article>
+
+        <article class="chart-card reveal">
+          <div class="chart-header">
+            <h2>AI Assistant Impact</h2>
+            <p>Assistant adoption and estimated outcome effectiveness.</p>
+          </div>
+          <div class="chart-wrap">
+            <canvas id="assistantImpactChart" aria-label="AI assistant impact chart" role="img">
+              AI assistant usage and impact chart.
+            </canvas>
+          </div>
+          <p class="chart-note">
+            Switch between usage share and decision-impact score to compare module effectiveness.
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="./visualizations.js" defer></script>
+  </body>
+</html>

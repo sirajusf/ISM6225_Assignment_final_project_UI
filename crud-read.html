@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform | Read Operation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./crud-pages.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html"><span class="brand-dot"></span>Tenant Intel</a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./visualizations.html">Visualizations</a>
+            <a href="./about.html">About Us</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container crud-page">
+        <span class="badge badge-read">Read</span>
+        <h1>Read Tenant Intelligence Data</h1>
+        <p class="subtitle">This page simulates viewing report records and property intelligence signals.</p>
+
+        <section>
+          <h2>Dummy Data View</h2>
+          <div class="card">
+            <p><strong>Record ID:</strong> TIP-2026-0412</p>
+            <p><strong>Property:</strong> Sunset Heights Apartments, Tampa</p>
+            <p><strong>Fraud Risk:</strong> Medium</p>
+            <p><strong>Lease Risk Score:</strong> 58 / 100</p>
+            <p><strong>Top Issues:</strong> Slow maintenance responses, hidden parking fee dispute</p>
+          </div>
+          <div class="card">
+            <p><strong>Record ID:</strong> TIP-2026-0401</p>
+            <p><strong>Property:</strong> Palm Grove Lofts, Miami</p>
+            <p><strong>Fraud Risk:</strong> Low</p>
+            <p><strong>Lease Risk Score:</strong> 46 / 100</p>
+            <p><strong>Top Issues:</strong> Higher-than-advertised move-in costs</p>
+          </div>
+        </section>
+
+        <div class="actions">
+          <a href="./visualizations.html">Back to Visualizations</a>
+          <a href="./crud-update.html">Go to Update Demo</a>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

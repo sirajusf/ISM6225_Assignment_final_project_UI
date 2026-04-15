@@ -1,0 +1,110 @@
+main {
+  padding: 2.1rem 0 3rem;
+}
+
+.crud-page {
+  background: linear-gradient(145deg, var(--surface-2), rgba(255, 255, 255, 0.86));
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+  padding: 1.2rem;
+  box-shadow: var(--glass-shadow);
+}
+
+.crud-page h1 {
+  margin: 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+}
+
+.crud-page .subtitle {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+}
+
+.crud-page section {
+  margin-top: 1rem;
+}
+
+.crud-page h2 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.card {
+  margin-top: 0.55rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.card p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+}
+
+.card ul {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  color: #fff;
+}
+
+.badge-create {
+  background: linear-gradient(130deg, #14b8a6, #0ea5e9);
+}
+
+.badge-read {
+  background: linear-gradient(130deg, #0ea5e9, #6366f1);
+}
+
+.badge-update {
+  background: linear-gradient(130deg, #8b5cf6, #6366f1);
+}
+
+.badge-delete {
+  background: linear-gradient(130deg, #fb923c, #f97316);
+}
+
+.actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.actions a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.58rem 0.78rem;
+  background: linear-gradient(130deg, var(--accent-indigo), var(--accent-cyan));
+}
+
+html[data-theme="dark"] .crud-page {
+  background: rgba(29, 42, 66, 0.8);
+  border-color: rgba(166, 194, 230, 0.42);
+}
+
+html[data-theme="dark"] .card {
+  background: rgba(15, 27, 46, 0.85);
+  border-color: rgba(160, 188, 223, 0.6);
+}
+
+@media (max-width: 640px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions a {
+    text-align: center;
+  }
+}

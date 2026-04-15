@@ -85,6 +85,14 @@
   background: rgba(240, 249, 255, 0.46);
 }
 
+.slot-image {
+  width: 100%;
+  height: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
 .image-slot figcaption {
   margin-top: 0.48rem;
   color: var(--muted);
@@ -93,6 +101,50 @@
 
 .github-section {
   margin-top: 1.45rem;
+}
+
+.about-crud-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.about-crud-btn {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  border-radius: 12px;
+  padding: 0.72rem 0.6rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.about-crud-btn:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.05);
+  box-shadow: 0 10px 20px rgba(47, 108, 169, 0.22);
+}
+
+.about-crud-btn:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.about-crud-btn.create {
+  background: linear-gradient(130deg, #14b8a6, #0ea5e9);
+}
+
+.about-crud-btn.read {
+  background: linear-gradient(130deg, #0ea5e9, #6366f1);
+}
+
+.about-crud-btn.update {
+  background: linear-gradient(130deg, #8b5cf6, #6366f1);
+}
+
+.about-crud-btn.delete {
+  background: linear-gradient(130deg, #fb923c, #f97316);
 }
 
 .github-link {
@@ -128,9 +180,23 @@ html[data-theme="dark"] .slot-inner {
   color: #d4e5fb;
 }
 
+html[data-theme="dark"] .slot-image {
+  filter: saturate(0.92) brightness(0.88);
+}
+
 @media (max-width: 900px) {
   .team-grid,
   .model-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-crud-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-crud-grid {
     grid-template-columns: 1fr;
   }
 }

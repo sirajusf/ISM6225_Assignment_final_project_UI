@@ -271,35 +271,35 @@ h3 {
 }
 
 :root[data-theme="dark"] {
-  --bg: #0e1422;
-  --surface: #121a2b;
-  --surface-2: rgba(27, 39, 61, 0.78);
-  --card: rgba(31, 45, 70, 0.86);
-  --text: #eef6ff;
-  --muted: #c6d9ef;
-  --border: rgba(158, 186, 228, 0.44);
-  --glass-border: rgba(170, 197, 235, 0.42);
-  --glass-shadow: 0 16px 34px rgba(3, 8, 16, 0.5);
-  --focus-ring: rgba(132, 178, 255, 0.5);
-  --orb-1: rgba(101, 158, 255, 0.38);
-  --orb-2: rgba(155, 124, 255, 0.34);
-  --orb-3: rgba(43, 200, 183, 0.32);
+  --bg: #0c1424;
+  --surface: #141f33;
+  --surface-2: rgba(26, 40, 61, 0.72);
+  --card: rgba(30, 45, 68, 0.82);
+  --text: #e6effb;
+  --muted: #adc1da;
+  --border: rgba(130, 161, 201, 0.36);
+  --glass-border: rgba(145, 175, 214, 0.34);
+  --glass-shadow: 0 14px 30px rgba(3, 8, 16, 0.42);
+  --focus-ring: rgba(122, 169, 247, 0.5);
+  --orb-1: rgba(78, 146, 237, 0.31);
+  --orb-2: rgba(137, 112, 240, 0.28);
+  --orb-3: rgba(38, 181, 166, 0.27);
 }
 
 html[data-theme="dark"] body {
   background-image: linear-gradient(
       135deg,
-      rgba(11, 20, 37, 0.97) 0%,
-      rgba(22, 34, 59, 0.86) 46%,
-      rgba(10, 17, 32, 0.96) 100%
+      rgba(10, 18, 33, 0.98) 0%,
+      rgba(19, 31, 52, 0.9) 44%,
+      rgba(9, 16, 29, 0.98) 100%
     ),
-    radial-gradient(circle at 18% 12%, rgba(32, 53, 84, 0.42), transparent 45%),
-    radial-gradient(circle at 82% 78%, rgba(29, 82, 129, 0.26), transparent 36%);
+    radial-gradient(circle at 18% 12%, rgba(29, 52, 84, 0.34), transparent 45%),
+    radial-gradient(circle at 82% 78%, rgba(30, 75, 118, 0.2), transparent 36%);
 }
 
 html[data-theme="dark"] .site-header {
-  background: rgba(13, 21, 38, 0.72);
-  border-bottom: 1px solid rgba(125, 151, 191, 0.35);
+  background: rgba(12, 20, 36, 0.78);
+  border-bottom: 1px solid rgba(121, 149, 186, 0.3);
 }
 
 html[data-theme="dark"] .brand {
@@ -311,19 +311,19 @@ html[data-theme="dark"] .main-nav a {
 }
 
 html[data-theme="dark"] .main-nav a:hover {
-  background: rgba(112, 147, 206, 0.34);
-  color: #f5f9ff;
+  background: rgba(88, 119, 171, 0.34);
+  color: #f3f8ff;
 }
 
 html[data-theme="dark"] .theme-toggle {
-  background: rgba(31, 48, 75, 0.6);
-  border-color: rgba(130, 161, 205, 0.45);
-  color: #e4f1ff;
+  background: rgba(29, 43, 66, 0.62);
+  border-color: rgba(121, 153, 197, 0.4);
+  color: #dce9fa;
 }
 
 html[data-theme="dark"] .theme-switch-slider {
-  background: rgba(76, 103, 146, 0.45);
-  border-color: rgba(132, 160, 201, 0.5);
+  background: rgba(71, 97, 138, 0.42);
+  border-color: rgba(119, 148, 189, 0.46);
 }
 
 html[data-theme="dark"] .theme-switch-slider::after {
@@ -362,19 +362,19 @@ html[data-theme="dark"] .theme-switch-slider::after {
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg: #0e1422;
-    --surface: #121a2b;
-    --surface-2: rgba(27, 39, 61, 0.78);
-    --card: rgba(31, 45, 70, 0.86);
-    --text: #eef6ff;
-    --muted: #c6d9ef;
-    --border: rgba(158, 186, 228, 0.44);
-    --glass-border: rgba(170, 197, 235, 0.42);
-    --glass-shadow: 0 16px 34px rgba(3, 8, 16, 0.5);
-    --focus-ring: rgba(132, 178, 255, 0.5);
-    --orb-1: rgba(101, 158, 255, 0.38);
-    --orb-2: rgba(155, 124, 255, 0.34);
-    --orb-3: rgba(43, 200, 183, 0.32);
+    --bg: #0c1424;
+    --surface: #141f33;
+    --surface-2: rgba(26, 40, 61, 0.72);
+    --card: rgba(30, 45, 68, 0.82);
+    --text: #e6effb;
+    --muted: #adc1da;
+    --border: rgba(130, 161, 201, 0.36);
+    --glass-border: rgba(145, 175, 214, 0.34);
+    --glass-shadow: 0 14px 30px rgba(3, 8, 16, 0.42);
+    --focus-ring: rgba(122, 169, 247, 0.5);
+    --orb-1: rgba(78, 146, 237, 0.31);
+    --orb-2: rgba(137, 112, 240, 0.28);
+    --orb-3: rgba(38, 181, 166, 0.27);
   }
 }
 
