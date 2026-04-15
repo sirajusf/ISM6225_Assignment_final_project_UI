@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Tenant Intelligence Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="./index.html">
+          <span class="brand-dot"></span>
+          Tenant Intel
+        </a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a class="active" href="./about.html">About Us</a>
+            <a href="./index.html#features">Features</a>
+            <a href="./index.html#ai-assistants">Renter Fit Assistant</a>
+            <a href="./index.html#testimonials">Contact</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main class="about-main">
+      <section class="container reveal about-hero">
+        <h1>About Our Team</h1>
+        <p>
+          We are building a renter-first platform that uses transparency, community
+          intelligence, and AI tools to help people make safer housing decisions.
+        </p>
+      </section>
+
+      <section class="container reveal">
+        <div class="section-head">
+          <h2>Team Members</h2>
+          <p>Name, role, and contributions</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card accent-cyan">
+            <h3>Member 1</h3>
+            <p class="team-role">Role: Project Lead</p>
+            <p>Contribution: Coordinated planning, product vision, and final integration.</p>
+          </article>
+          <article class="team-card accent-indigo">
+            <h3>Member 2</h3>
+            <p class="team-role">Role: Frontend Developer</p>
+            <p>Contribution: Built responsive UI, theme system, and interaction behavior.</p>
+          </article>
+          <article class="team-card accent-violet">
+            <h3>Member 3</h3>
+            <p class="team-role">Role: Data & AI Analyst</p>
+            <p>Contribution: Defined AI feature flows, risk logic, and model-facing inputs.</p>
+          </article>
+          <article class="team-card accent-mint">
+            <h3>Member 4</h3>
+            <p class="team-role">Role: Documentation & QA</p>
+            <p>Contribution: Prepared documentation, validation notes, and review feedback.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container reveal">
+        <div class="section-head">
+          <h2>Logical Data Model</h2>
+          <p>Image slots for architecture/data model visuals</p>
+        </div>
+        <div class="model-grid">
+          <figure class="image-slot">
+            <div class="slot-inner">Logical Data Model - Image Slot 1</div>
+            <figcaption>Upload your first model image here.</figcaption>
+          </figure>
+          <figure class="image-slot">
+            <div class="slot-inner">Logical Data Model - Image Slot 2</div>
+            <figcaption>Upload your second model image here.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="container reveal github-section">
+        <div class="section-head">
+          <h2>Project Repository</h2>
+          <p>Source code and updates</p>
+        </div>
+        <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">
+          View Project on GitHub
+        </a>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

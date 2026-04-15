@@ -1,0 +1,4 @@
+package-lock.json
+*.docx
+*.pdf
+node_modules/

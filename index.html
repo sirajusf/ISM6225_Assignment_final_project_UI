@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenant Intelligence Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="brand" href="#">
+          <span class="brand-dot"></span>
+          Tenant Intel
+        </a>
+        <div class="nav-actions">
+          <nav class="main-nav" aria-label="Main navigation">
+            <a class="active" href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./index.html#features">Features</a>
+            <a href="./index.html#ai-assistants">Renter Fit Assistant</a>
+            <a href="./index.html#testimonials">Contact</a>
+          </nav>
+          <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
+            <span class="theme-label">Dark</span>
+            <span class="theme-switch-ui">
+              <input id="theme-switch" class="theme-switch-input" type="checkbox" />
+              <span class="theme-switch-slider" aria-hidden="true"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-main reveal">
+            <div class="hero-orbs" aria-hidden="true">
+              <span class="orb orb-a"></span>
+              <span class="orb orb-b"></span>
+              <span class="orb orb-c"></span>
+            </div>
+            <p class="eyebrow">Smart Rental Decisions</p>
+            <h1>Know Before You Rent</h1>
+            <p class="hero-text">
+              A tenant-first, AI-powered platform designed to help renters
+              uncover the real story behind a property before signing a lease.
+            </p>
+            <p class="hero-purpose">
+              Our purpose is to reduce rental fraud, hidden costs, and bad lease
+              decisions through transparent community insights and practical risk
+              signals.
+            </p>
+            <div class="hero-trust">
+              <article>
+                <p class="trust-value">32K+</p>
+                <p class="trust-label">community signals</p>
+              </article>
+              <article>
+                <p class="trust-value">18s</p>
+                <p class="trust-label">avg insight response</p>
+              </article>
+              <article>
+                <p class="trust-value">91%</p>
+                <p class="trust-label">decision confidence boost</p>
+              </article>
+            </div>
+            <div class="search-shell glow-border">
+              <p class="search-label">Start with Search</p>
+              <div class="search-tabs" aria-hidden="true">
+                <span class="tab active">Properties</span>
+                <span class="tab">Scam Reports</span>
+                <span class="tab">Lease Risk</span>
+                <span class="tab">Renter Fit</span>
+              </div>
+              <form class="search-bar" role="search">
+              <label class="sr-only" for="property-search"
+                >Search properties, scams, reviews, costs, and AI assistant insights</label
+              >
+              <input
+                id="property-search"
+                type="search"
+                placeholder="Search properties, reviews, scam alerts, lease risks, or renter fit insights..."
+              />
+              <button type="submit">Run Insight Search</button>
+              </form>
+              <div class="quick-chips">
+                <span>Building</span>
+                <span>Address</span>
+                <span>Landlord</span>
+                <span>Management Company</span>
+              </div>
+              <p id="search-feedback" class="search-feedback" aria-live="polite"></p>
+            </div>
+          </div>
+          <aside class="hero-panel reveal">
+            <h2>Why this matters</h2>
+            <p class="panel-note">Renting should feel safer, not riskier.</p>
+            <ul class="matter-list">
+              <li>Confidence before lease signing</li>
+              <li>Transparent costs before move-in</li>
+              <li>Fraud signals before deposit payment</li>
+            </ul>
+            <div class="matter-stats">
+              <article>
+                <p class="stat-value">12K+</p>
+                <p class="stat-label">searches/month</p>
+              </article>
+              <article>
+                <p class="stat-value">87%</p>
+                <p class="stat-label">users avoid hidden fees</p>
+              </article>
+              <article>
+                <p class="stat-value">4.8/5</p>
+                <p class="stat-label">tenant trust score</p>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features" class="features container reveal">
+        <h2>Key MVP Features</h2>
+        <div class="feature-grid">
+          <article class="feature-card accent-cyan">
+            <h3>Building & Landlord Reputation</h3>
+            <p>
+              Snapshot scores and recurring issue alerts for properties and
+              landlords.
+            </p>
+          </article>
+          <article class="feature-card accent-indigo">
+            <h3>Structured Anonymous Reviews</h3>
+            <p>
+              Consistent, privacy-safe tenant feedback across maintenance,
+              costs, and communication.
+            </p>
+          </article>
+          <article class="feature-card accent-violet">
+            <h3>AI Lease Red Flag Scanner</h3>
+            <p>
+              Detect risky clauses and highlight sections that need clarification
+              before signing.
+            </p>
+          </article>
+          <article class="feature-card accent-coral">
+            <h3>Scam & Fraud Reporting</h3>
+            <p>
+              Separate fraud reports to flag fake listings, deposit scams, and
+              suspicious activity.
+            </p>
+          </article>
+          <article class="feature-card accent-mint">
+            <h3>True Cost & Hidden Fee Estimator</h3>
+            <p>
+              Estimate actual monthly and move-in costs beyond advertised base
+              rent.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ai-assistants" class="ai-assistants container reveal">
+        <div class="section-head">
+          <h2>AI Assistants</h2>
+          <p>New intelligence modules for smarter renter decisions</p>
+        </div>
+        <div class="assistant-grid">
+          <article class="assistant-card accent-indigo">
+            <h3>Natural Language Search</h3>
+            <p>
+              Search the platform using plain language like "2-bed under $1800
+              with low scam risk and fast maintenance."
+            </p>
+          </article>
+          <article class="assistant-card accent-cyan">
+            <h3>Renter Fit Assistant</h3>
+            <p>
+              Get personalized property matches based on budget, commute,
+              lifestyle preferences, and risk tolerance.
+            </p>
+          </article>
+          <article class="assistant-card accent-violet">
+            <h3>Negotiation Copilot</h3>
+            <p>
+              Generate negotiation points and landlord questions from lease red
+              flags and listing signals.
+            </p>
+          </article>
+          <article class="assistant-card accent-mint">
+            <h3>Deposit Recovery Assistant</h3>
+            <p>
+              Build a post move-out recovery plan with dispute checklists,
+              evidence guidance, and draft-ready request language.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews container reveal">
+        <div class="section-head">
+          <h2>Recent Reviews</h2>
+          <p>Live pulse from renters across cities</p>
+        </div>
+        <div class="review-grid">
+          <article class="review-card accent-cyan">
+            <div class="review-top">
+              <h3>Sunset Heights Apartments</h3>
+              <p class="rating">2.8 / 5.0</p>
+            </div>
+            <p class="location">Tampa, FL</p>
+            <p class="review-quote">
+              "Maintenance responses were slow, but issues were eventually fixed.
+              Hidden parking fees were the biggest surprise."
+            </p>
+            <div class="tags">
+              <span>Hidden Fees</span><span>Slow Maintenance</span>
+            </div>
+          </article>
+
+          <article class="review-card accent-indigo">
+            <div class="review-top">
+              <h3>Harbor Point Residences</h3>
+              <p class="rating">4.1 / 5.0</p>
+            </div>
+            <p class="location">Orlando, FL</p>
+            <p class="review-quote">
+              "Transparent lease terms and quick landlord communication made this
+              one of the smoothest rentals I have had."
+            </p>
+            <div class="tags">
+              <span>Fast Support</span><span>Clear Lease</span>
+            </div>
+          </article>
+
+          <article class="review-card accent-violet">
+            <div class="review-top">
+              <h3>Palm Grove Lofts</h3>
+              <p class="rating">3.3 / 5.0</p>
+            </div>
+            <p class="location">Miami, FL</p>
+            <p class="review-quote">
+              "Great location, but move-in costs were higher than expected. The
+              estimator helped me compare alternatives quickly."
+            </p>
+            <div class="tags">
+              <span>Move-in Cost</span><span>Good Location</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="fraud-reports container reveal">
+        <div class="section-head">
+          <h2>Recent Scam/Fraud Reports</h2>
+          <p>Community-submitted warning signals (dummy data)</p>
+        </div>
+        <div class="fraud-grid">
+          <article class="fraud-card accent-coral">
+            <div class="fraud-top">
+              <h3>Deposit Scam Reported</h3>
+              <span class="severity high">High</span>
+            </div>
+            <p class="location">Westshore District, Tampa</p>
+            <p class="fraud-quote">
+              "Poster requested deposit before showing and stopped responding
+              after payment confirmation request."
+            </p>
+            <div class="tags">
+              <span>Deposit Scam</span><span>No Showing</span>
+            </div>
+          </article>
+          <article class="fraud-card accent-indigo">
+            <div class="fraud-top">
+              <h3>Fake Listing Suspicion</h3>
+              <span class="severity medium">Medium</span>
+            </div>
+            <p class="location">Downtown Orlando</p>
+            <p class="fraud-quote">
+              "Photos did not match unit tour video. Address reused across
+              multiple unrelated listings."
+            </p>
+            <div class="tags">
+              <span>Photos Mismatch</span><span>Duplicate Listing</span>
+            </div>
+          </article>
+          <article class="fraud-card accent-coral">
+            <div class="fraud-top">
+              <h3>Broker Impersonation Claim</h3>
+              <span class="severity high">High</span>
+            </div>
+            <p class="location">Brickell, Miami</p>
+            <p class="fraud-quote">
+              "Reported agent could not provide brokerage ID and pushed urgent
+              wire transfer terms."
+            </p>
+            <div class="tags">
+              <span>Fake Broker</span><span>Urgent Transfer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials container reveal">
+        <div class="section-head">
+          <h2>Tenant Testimonials</h2>
+          <p>How renters used intelligence and fraud alerts before signing</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card accent-mint">
+            <div class="avatar">AS</div>
+            <div>
+              <h3>Aisha S.</h3>
+              <p class="role">Graduate Student, Tampa</p>
+              <p>
+                "I flagged a risky renewal clause before signing and negotiated
+                better terms. This platform saved me months of stress."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial-card accent-cyan">
+            <div class="avatar">JR</div>
+            <div>
+              <h3>Jason R.</h3>
+              <p class="role">Software Engineer, Austin</p>
+              <p>
+                "The search and review signals helped me skip two problematic
+                buildings and choose a safer, better managed place."
+              </p>
+            </div>
+          </article>
+          <article class="testimonial-card accent-indigo">
+            <div class="avatar">MP</div>
+            <div>
+              <h3>Maria P.</h3>
+              <p class="role">Healthcare Professional, Orlando</p>
+              <p>
+                "I compared true monthly costs side by side and avoided a listing
+                that looked cheap upfront but was expensive after all fees."
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
