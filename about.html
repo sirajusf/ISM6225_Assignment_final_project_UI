@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Tenant Intelligence Platform</title>
+    <title>About Us | TenantLens</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,13 +18,14 @@
       <div class="container nav-wrapper">
         <a class="brand" href="./index.html">
           <span class="brand-dot"></span>
-          Tenant Intel
+          TenantLens
         </a>
         <div class="nav-actions">
           <nav class="main-nav" aria-label="Main navigation">
             <a href="./index.html">Home</a>
             <a class="active" href="./about.html">About Us</a>
             <a href="./index.html#features">Features</a>
+            <a href="./visualizations.html">Visualizations</a>
             <a href="./index.html#ai-assistants">Renter Fit Assistant</a>
             <a href="./index.html#testimonials">Contact</a>
           </nav>
@@ -74,6 +75,22 @@
             <p class="team-role">Role: Documentation & QA</p>
             <p>Contribution: Prepared documentation, validation notes, and review feedback.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="container reveal">
+        <div class="section-head">
+          <h2>Chatbot Dataset</h2>
+          <p>Structured reviews used for the Botpress assistant in this project</p>
+        </div>
+        <div class="bot-dataset">
+          <p>
+            The chatbot is grounded on a small tabular dataset where each row is one tenant review with
+            <strong>property_name</strong>, <strong>city</strong>, <strong>reviewer_name</strong>, and
+            <strong>rating</strong> (numeric scores). The sample includes five properties across Chicago,
+            Austin, Columbus, Seattle, and Denver, with two reviews per property so the assistant can reflect
+            variation in scores and locations.
+          </p>
         </div>
       </section>
 
@@ -129,5 +146,7 @@
     </main>
 
     <script src="./script.js" defer></script>
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/04/17/19/20260417190844-9YTNU2DG.js" defer></script>
   </body>
 </html>

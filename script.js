@@ -6,16 +6,34 @@ const searchTabs = document.querySelectorAll(".search-tabs .tab");
 const searchButton = document.querySelector(".search-bar button");
 const themeSwitch = document.querySelector("#theme-switch");
 const THEME_KEY = "tip-theme-mode";
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function safeStorageGet(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function safeStorageSet(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // Ignore storage write failures (private mode / restricted storage).
+  }
+}
 
 function applyTheme(mode) {
   document.documentElement.setAttribute("data-theme", mode);
+  document.documentElement.style.colorScheme = mode;
   if (themeSwitch) {
     themeSwitch.checked = mode === "dark";
   }
 }
 
 function getInitialTheme() {
-  const stored = localStorage.getItem(THEME_KEY);
+  const stored = safeStorageGet(THEME_KEY);
   if (stored === "light" || stored === "dark") {
     return stored;
   }
@@ -28,7 +46,7 @@ applyTheme(currentThemeMode);
 if (themeSwitch) {
   themeSwitch.addEventListener("change", () => {
     currentThemeMode = themeSwitch.checked ? "dark" : "light";
-    localStorage.setItem(THEME_KEY, currentThemeMode);
+    safeStorageSet(THEME_KEY, currentThemeMode);
     applyTheme(currentThemeMode);
   });
 }
@@ -67,7 +85,7 @@ if (searchForm && searchInput && searchFeedback) {
   });
 }
 
-if ("IntersectionObserver" in window) {
+if ("IntersectionObserver" in window && !prefersReducedMotion) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

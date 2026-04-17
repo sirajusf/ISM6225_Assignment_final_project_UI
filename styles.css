@@ -48,6 +48,11 @@ body {
   background-attachment: fixed;
 }
 
+main > section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
