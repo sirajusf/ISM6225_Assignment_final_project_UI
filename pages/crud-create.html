@@ -3,28 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TenantLens | Update Operation</title>
+    <title>TenantLens | Create Operation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./crud-pages.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/crud-pages.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav-wrapper">
-        <a class="brand" href="./index.html"><span class="brand-dot"></span>TenantLens</a>
+        <a class="brand" href="../index.html"><span class="brand-dot"></span>TenantLens</a>
         <div class="nav-actions">
           <nav class="main-nav" aria-label="Main navigation">
-            <a href="./index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="./about.html">About Us</a>
-            <a href="./index.html#features">Features</a>
+            <a href="../index.html#features">Features</a>
             <a class="active" href="./visualizations.html">Visualizations</a>
-            <a href="./index.html#ai-assistants">Renter Fit Assistant</a>
-            <a href="./index.html#testimonials">Contact</a>
+            <a href="../index.html#ai-assistants">Renter Fit Assistant</a>
+            <a href="../index.html#testimonials">Contact</a>
           </nav>
           <label class="theme-toggle" for="theme-switch" aria-label="Toggle dark mode">
             <span class="theme-label">Dark</span>
@@ -38,40 +38,43 @@
     </header>
     <main>
       <div class="container crud-page">
-        <span class="badge badge-update">Update</span>
-        <h1>Update Existing Intelligence Records</h1>
+        <span class="badge badge-create">Create</span>
+        <h1>Create a New TenantLens Record</h1>
         <p class="subtitle">
-          This page simulates modifying an existing report after new tenant evidence is submitted.
+          This page explains how renters would submit a new report, review, or lease-risk signal.
         </p>
 
         <section>
-          <h2>Example Update Flow</h2>
+          <h2>How Create Would Work</h2>
           <div class="card">
-            <p><strong>Record:</strong> TIP-2026-0412</p>
-            <p><strong>Current Status:</strong> Medium fraud risk, 58 lease risk score</p>
-            <p><strong>New Input:</strong> Additional review confirms repeated undisclosed move-out fees</p>
-            <p><strong>Updated Status:</strong> High fraud risk, 64 lease risk score</p>
+            <p>
+              Users fill a structured form with property details, issue category, incident date, and supporting
+              notes. Optional evidence links can be added for validation.
+            </p>
+            <ul>
+              <li>Input fields: building name, address, landlord/management, category, severity</li>
+              <li>Validation: required fields, duplicate-check against existing reports</li>
+              <li>Submission: stores a new report and triggers moderation review</li>
+            </ul>
           </div>
         </section>
 
         <section>
-          <h2>Update Rules (Simulation)</h2>
+          <h2>Example New Entry</h2>
           <div class="card">
-            <ul>
-              <li>Only verified users and moderators can edit critical fields</li>
-              <li>Every change stores a timestamp and edit history</li>
-              <li>Updated records re-score risk analytics in the dashboard</li>
-            </ul>
+            <p><strong>Property:</strong> Harbor Point Residences, Orlando</p>
+            <p><strong>Category:</strong> Hidden Fee Alert</p>
+            <p><strong>Summary:</strong> Parking and move-in admin fees not disclosed in listing.</p>
           </div>
         </section>
 
         <div class="actions">
           <a href="./about.html">Back to About Us</a>
-          <a href="./crud-delete.html">Go to Delete Demo</a>
+          <a href="./crud-read.html">Go to Read Demo</a>
         </div>
       </div>
     </main>
-    <script src="./script.js" defer></script>
+    <script src="../js/script.js" defer></script>
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/04/17/19/20260417190844-9YTNU2DG.js" defer></script>
   </body>
